@@ -3,12 +3,19 @@
 body {
   background-color: #111;
   color: white;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Navbar */
 
 .logo {
   width: 70px;
+}
+
+.nav-link:hover {
+  text-decoration: underline red;
 }
 
 /* Carousel */
