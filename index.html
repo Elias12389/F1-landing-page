@@ -14,7 +14,7 @@
     <link rel="icon" href="img/F1-rouded-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>F1 Racing</title>
+    <title>F1 Portal</title>
   </head>
 
   <body>
@@ -142,6 +142,59 @@
       </button>
     </div>
 
+    <!-- Grid mostrando as próximas corridas do calendário -->
+
+    <div class="container">
+      <h2 class="section-title mt-5">Race Calendar</h2>
+      <p class="section-text">
+        Here are some of the recent races on the Formula One calendar
+      </p>
+      <div class="row text-center mb-2" style="gap: 2rem">
+        <div class="col card bg-dark text-light">
+          <span>Two races ago:</span>
+          <span>Hungary GP</span>
+          <hr />
+          <span>Winner:</span>
+          <span>Kimi Antonelli <br />🏆</span>
+        </div>
+        <div class="col card bg-dark text-light">
+          <span>Previous race:</span>
+          <span>Netherlands GP</span>
+          <hr />
+          <span>Winner:</span>
+          <span
+            >Lando Norris <br />
+            🏆</span
+          >
+        </div>
+
+        <div class="col card bg-dark text-light border-danger">
+          <span class="badge bg-danger">Last Race:</span>
+          <span>Italy GP</span>
+          <hr />
+          <span>Winner:</span>
+          <span
+            >Kimi Antonelli <br />
+            🏆</span
+          >
+        </div>
+        <div class="col card bg-dark text-light">
+          <span>Next race:</span>
+          <span>Spain GP</span>
+          <hr />
+          <span>Winner:</span>
+          <span>TBD</span>
+        </div>
+        <div class="col card bg-dark text-light">
+          <span>Two races from now:</span>
+          <span>Azerbaijan GP</span>
+          <hr />
+          <span>Winner:</span>
+          <span>TBD</span>
+        </div>
+      </div>
+    </div>
+
     <!-- RACES -->
     <section id="races" class="section">
       <div class="container">
@@ -162,7 +215,7 @@
               />
 
               <div class="card-body">
-                <h4 class="card-title">Dutch GP</h4>
+                <h4 class="card-title">Netherlands GP</h4>
 
                 <p class="card-text">
                   A race full of overtakes and exciting moments.
@@ -232,7 +285,8 @@
                 <h4 class="card-title">Italian GP</h4>
 
                 <p class="card-text">
-                  A great race by Kimi Antonelli. From 19th to 1st
+                  A great race by Kimi Antonelli. From 19th to 1st. A historic
+                  result for the young driver.
                 </p>
                 <div>
                   <a href="#" class="btn btn-danger view"> View More </a>
@@ -276,22 +330,58 @@
               />
 
               <div class="card-body text-center">
-                <h4 class="card-title">Madring GP</h4>
+                <h4 class="card-title">Madring(Spain) GP</h4>
 
                 <p class="card-text">
                   A new track on the calendar promises to be one of the most
                   exciting GPs in recent Formula One history.
                 </p>
 
-                <div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <a href="#" class="btn btn-danger view"> View More </a>
-                </div>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">GP</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">Modal body..</div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- NEWS -->
     <section id="news" class="section news-section">
@@ -314,9 +404,9 @@
 
           <div class="col-md-4">
             <div class="news-box">
-              <h3>Championship</h3>
+              <h3 class="fs-4">Championship</h3>
 
-              <p>
+              <p class="fs-6">
                 The championship battle is getting more exciting with every
                 race.
               </p>
