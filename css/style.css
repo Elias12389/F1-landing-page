@@ -168,4 +168,9 @@ body {
   .caption-box p {
     font-size: 14px;
   }
+
+   .passion{
+    display: none;
+  }
 }
+
